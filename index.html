@@ -9,183 +9,163 @@
     rel="stylesheet"
     type="text/css"
   />
-  <style>
-    .navbar {
-      z-index: 100; 
-    }
-    .image-container img {
-      transition: transform 0.5s ease-in-out;
-      will-change: transform;
-    }
-    .image-container img:hover {
-      transform: scale(1.05);
-    }
-    .section {
-      border: 2px solid #4a4a4a;
-      border-radius: 8px;
-      padding: 16px;
-      margin-bottom: 16px;
-    }
-    .section h2 {
-      font-size: 2rem;
-      margin-bottom: 8px;
-    }
-    .section p {
-      font-size: 1.125rem;
-    }
-  </style>
 </head>
- <!-- HI NAGUBA ANG ICON SA DARK MODE UG LIGHT MODE AMBOT UNSAON NI HAHAHA -->
 <body style="box-sizing: border-box">
-  <div class="navbar bg-base-100 px-5 sticky top-0">
+  <div class="navbar sticky top-0 z-50 bg-opacity-80 backdrop-blur-sm px-5">
     <div class="navbar-start">
-      <a class="btn btn-ghost text-2xl" href="#Home">daisyUI</a>
+      <a class="btn btn-ghost text-2xl">daisyUI</a>
     </div>
     <div class="navbar-center">
       <ul class="menu menu-horizontal px-1 text-base">
-        <li><a href="#Mutuc">Mutuc</a></li>
-        <li><a href="#Saclag">Saclag</a></li>
-        <li><a href="#Sawabi">Sawabi</a></li>
+        <li><a>Mutuc</a></li>
+        <li><a>Saclag</a></li>
+        <li><a>Sawabi</a></li>
       </ul>
     </div>
     <div class="navbar-end pe-5">
       <label class="swap swap-rotate">
+        <!-- this hidden checkbox controls the state -->
         <input type="checkbox" class="theme-controller" value="synthwave" />
-        <svg class="swap-off h-10 w-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <!-- Sun icon path here -->
+
+        <!-- sun icon -->
+        <svg
+          class="swap-off h-10 w-10 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M5.64,17l-.71.71a1,1,0,0,0,0,1.41,1,1,0,0,0,1.41,0l.71-.71A1,1,0,0,0,5.64,17ZM5,12a1,1,0,0,0-1-1H3a1,1,0,0,0,0,2H4A1,1,0,0,0,5,12Zm7-7a1,1,0,0,0,1-1V3a1,1,0,0,0-2,0V4A1,1,0,0,0,12,5ZM5.64,7.05a1,1,0,0,0,.7.29,1,1,0,0,0,.71-.29,1,1,0,0,0,0-1.41l-.71-.71A1,1,0,0,0,4.93,6.34Zm12,.29a1,1,0,0,0,.7-.29l.71-.71a1,1,0,1,0-1.41-1.41L17,5.64a1,1,0,0,0,0,1.41A1,1,0,0,0,17.66,7.34ZM21,11H20a1,1,0,0,0,0,2h1a1,1,0,0,0,0-2Zm-9,8a1,1,0,0,0-1,1v1a1,1,0,0,0,2,0V20A1,1,0,0,0,12,19ZM18.36,17A1,1,0,0,0,17,18.36l.71.71a1,1,0,0,0,1.41,0,1,1,0,0,0,0-1.41ZM12,6.5A5.5,5.5,0,1,0,17.5,12,5.51,5.51,0,0,0,12,6.5Zm0,9A3.5,3.5,0,1,1,15.5,12,3.5,3.5,0,0,1,12,15.5Z"
+          />
         </svg>
-        <svg class="swap-on h-10 w-10 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <!-- Moon icon path here -->
+
+        <!-- moon icon -->
+        <svg
+          class="swap-on h-10 w-10 fill-current"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M21.64,13a1,1,0,0,0-1.05-.14,8.05,8.05,0,0,1-3.37.73A8.15,8.15,0,0,1,9.08,5.49a8.59,8.59,0,0,1,.25-2A1,1,0,0,0,8,2.36,10.14,10.14,0,1,0,22,14.05,1,1,0,0,0,21.64,13Zm-9.5,6.69A8.14,8.14,0,0,1,7.08,5.22v.27A10.15,10.15,0,0,0,17.22,15.63a9.79,9.79,0,0,0,2.1-.22A8.11,8.11,0,0,1,12.14,19.73Z"
+          />
         </svg>
       </label>
     </div>
   </div>
-
-  <div id="Home"></div>
-
-  <div class="p-4">
-    <div class="flex overflow-x-auto gap-4">
-      <img
-        src="https://static.wixstatic.com/media/3c1116_3f321a67dc2840b385c9141034474b43~mv2.jpg/v1/crop/x_0,y_237,w_2000,h_2072/fill/w_379,h_393,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2004-EDUARDO-MUTUC.jpg"
-        class="flex-shrink-0 w-1/3 h-auto object-cover rounded-lg shadow-lg"
-        alt="Image 1"
-      />
-      <img
-        src="https://static.wixstatic.com/media/154255_d415c284443c43e3b3ceec487223b783~mv2.jpg/v1/fill/w_489,h_736,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/154255_d415c284443c43e3b3ceec487223b783~mv2.jpg"
-        class="flex-shrink-0 w-1/3 h-auto object-cover rounded-lg shadow-lg"
-        alt="Image 2"
-      />
-      <img
-        src="https://live.staticflickr.com/7314/15764287384_5c39e4cd97.jpg"
-        class="flex-shrink-0 w-1/3 h-auto object-cover rounded-lg shadow-lg"
-        alt="Image 3"
-      />
+  <div class="flex flex-col md:flex-row md:justify-center md:space-x-4 items-center m-20">
+    <div class="card bg-base-100 image-full w-full md:w-96 lg:w-[40rem] shadow-xl transition-transform duration-500 hover:scale-105">
+      <figure style="height: 400px;" class="w-full">
+        <img
+          src="https://static.wixstatic.com/media/3c1116_3f321a67dc2840b385c9141034474b43~mv2.jpg/v1/crop/x_0,y_237,w_2000,h_2072/fill/w_379,h_393,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2004-EDUARDO-MUTUC.jpg"
+          alt="Mutuc"
+          class="object-cover h-full w-full"
+        />
+      </figure>
+      <div class="card-body backdrop-blur-sm text-white">
+        <h2 class="card-title text-2xl">MUTUC</h2>
+        <p class="text-lg font-semibold">Eduardo Tubig Mutuc</p>
+        <p class="text-sm">A master craftsman in the art of "metalsmithing," renowned for his intricate silver and wood works.</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">SEE ME</button>
+        </div>
+      </div>
     </div>
-  </div>
-
-  <div id="Mutuc"></div>
-
-  <main1 class="m-1">
-
-    <div class="m-20 md:container md:mx-auto flex justify-center">
-      <p class="text-6xl font-bold">EDUARDO TUBIG MUTUC</p>
-    </div>
-    <div class="m-8">
-      <img src="https://tse1.mm.bing.net/th?id=OIP.dq8KhoFFQ9ynoiVtmnQIxgHaFs&pid=Api&P=0&h=220" alt="">
-    </div>
-
-    <!-- Sections -->
-    <div class="m-8 section">
-      <h2>Biography</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-    </div>
-    
-    <div class="m-8 section">
-      <h2>Artistic Contributions</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-    </div>
-    
-    <div class="m-8 section">
-      <h2>Legacy</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-    </div>
-    
-    <div class="m-8 section">
-      <h2>Visuals</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-    </div>
-
-  </main>
-
-  <div id="Saclag"></div>
-
-  <main2 class="m-1">
-
-    <div class="m-20 md:container md:mx-auto flex justify-center">
-      <p class="text-6xl font-bold">ALONZO SACLAG</p>
-    </div>
-    <div class="m-8">
-      <img src="https://i.ytimg.com/vi/EaL8gUqiU_8/maxresdefault.jpg" alt="">
-    </div>
-
-    <!-- Sections -->
-    <div class="m-8 section">
-      <h2>Biography</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-    </div>
-    
-    <div class="m-8 section">
-      <h2>Artistic Contributions</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-    </div>
-    
-    <div class="m-8 section">
-      <h2>Legacy</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-    </div>
-    
-    <div class="m-8 section">
-      <h2>Visuals</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-    </div>
-
-  </main2>
-
-  <div id="Sawabi"></div>
   
-  <main3 class="m-1">
+    <div class="card bg-base-100 image-full w-full md:w-96 lg:w-[40rem] shadow-xl mt-4 md:mt-0 transition-transform duration-500 hover:scale-105">
+      <figure style="height: 400px;" class="w-full">
+        <img
+          src="https://i.ytimg.com/vi/EaL8gUqiU_8/maxresdefault.jpg"
+          alt="Saclag"
+          class="object-cover h-full w-full"
+        />
+      </figure>
+      <div class="card-body backdrop-blur-sm text-white">
+        <h2 class="card-title text-2xl">SACLAG</h2>
+        <p class="text-lg font-semibold">Alonzo Saclag</p>
+        <p class="text-sm">A cultural advocate dedicated to preserving the rich traditions and rituals of the Kalinga people.</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">SEE ME</button>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card bg-base-100 image-full w-full md:w-96 lg:w-[40rem] shadow-xl mt-4 md:mt-0 transition-transform duration-500 hover:scale-105">
+      <figure style="height: 400px;" class="w-full">
+        <img
+          src="https://www.dictionnaire-creatrices.com/static/uploadfolder/evidensse_creatrice/2017/09/SAWABI_Darhata.jpg"
+          alt="Sawabi"
+          class="object-cover h-full w-full"
+        />
+      </figure>
+      <div class="card-body backdrop-blur-sm text-white">
+        <h2 class="card-title text-2xl">SAWABI</h2>
+        <p class="text-lg font-semibold">Darhata Sawabi</p>
+        <p class="text-sm">An expert weaver, celebrated for her mastery in traditional textile techniques from the island of Sulu.</p>
+        <div class="card-actions justify-end">
+          <button class="btn btn-primary">SEE ME</button>
+        </div>
+      </div>
+    </div>
+</div>
+<footer class="footer bg-base-300 text-base-content p-10">
+  <nav>
+    <h6 class="footer-title">RESEARCHERS: </h6>
+    <a>Degamo, Willian</a>
+    <a>Damayo, Conybeare</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">E-Portfolio Developer: </h6>
+    <a>Aviso, John Carl</a>
+    <a>Baydal, Lourden</a>
+    <a>Patigas, John Paul</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">BSIT 2-C</h6>
+        <!-- Linking  -->
+    <a class="link link-hover">About us</a>
+    <a class="link link-hover">Contact</a>
+    <a class="link link-hover">Instructor</a>
+    <a class="link link-hover">School</a>
+  </nav>
+  <nav>
+    <h6 class="footer-title">Social</h6>
+    <div class="grid grid-flow-col gap-4">
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
+        </svg>
+      </a>
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+        </svg>
+      </a>
+      <a>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          class="fill-current">
+          <path
+            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+        </svg>
+      </a>
+    </div>
+  </nav>
+</footer>
 
-    <div class="m-20 md:container md:mx-auto flex justify-center">
-      <p class="text-6xl font-bold">DARHATA SAWABI</p>
-    </div>
-    <div class="m-8">
-      <img src="https://live.staticflickr.com/7454/16199504160_e97d6a8ec4_b.jpg" alt="">
-    </div>
-
-    <!-- Sections -->
-    <div class="m-8 section">
-      <h2>Biography</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-    </div>
-    
-    <div class="m-8 section">
-      <h2>Artistic Contributions</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-    </div>
-    
-    <div class="m-8 section">
-      <h2>Legacy</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-    </div>
-    
-    <div class="m-8 section">
-      <h2>Visuals</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-    </div>
-
-  </main3>
-
-  <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
-
