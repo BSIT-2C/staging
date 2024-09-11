@@ -9,9 +9,46 @@
       rel="stylesheet"
       type="text/css"
     />
+    <style>
+      .typewriter {
+        font-size: 4vw; 
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 2px solid black; /* Cursor effect */
+        width: 0; /* Initially hidden */
+        animation: typing 7s steps(30, end) infinite, blink-caret 0.75s step-end infinite;
+      }
+    
+      @keyframes typing {
+        from { width: 0; }
+        to { width: 15em; }
+      }
+    
+      @keyframes blink-caret {
+        from { border-right-color: rgba(255,255,255,.75); }
+        to { border-right-color: transparent; }
+      }
+    
+      /* Responsive adjustments */
+      @media (min-width: 768px) {
+        .typewriter {
+          font-size: 3vw; /* Smaller font size for larger screens */
+        }
+      }
+    
+      @media (min-width: 1024px) {
+        .typewriter {
+          font-size: 2vw; /* Even smaller font size for extra-large screens */
+        }
+      }
+      .drawer-content {
+      max-height: calc(100vh - 4rem); /* Adjust based on your header height */
+    }
+    </style>
   </head>
   <!-- Please kog download sa mga photo ref ninyo or kamo bahala oy tiguwang namo -->
-  <body style="box-sizing: border-box">
+  <body>
     <div id="Home"></div>
     <button
       type="button"
@@ -40,8 +77,8 @@
       <div class="navbar-start">
         <a class="btn btn-ghost text-2xl" href="#Home">MUSASA</a>
       </div>
-      <div class="navbar-center">
-        <ul class="menu menu-horizontal px-1 text-xl not-italic">
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal px-1 text-s not-italic">
           <li><a href="#Mutuc">Mutuc</a></li>
           <li><a href="#Saclag">Saclag</a></li>
           <li><a href="#Sawabi">Sawabi</a></li>
@@ -76,8 +113,12 @@
         </label>
       </div>
     </div>
+    <div class="typewriter-container" style="text-align: center; margin-top: 20px;">
+      <div class="typewriter">WILLIAN'S GROUP | MUSASA</div>
+    </div>
+  
     <div
-      class="flex flex-col md:flex-row md:justify-center md:space-x-4 items-center m-20"
+      class="flex flex-col md:flex-row md:justify-center md:space-x-4 items-center mx-10"
     >
       <div
         class="card bg-base-100 image-full w-full md:w-96 lg:w-[40rem] shadow-xl transition-transform duration-500 hover:scale-105 my-10"
@@ -103,7 +144,7 @@
           </div>
         </div>
       </div>
-
+  
       <div
         class="card bg-base-100 image-full w-full md:w-96 lg:w-[40rem] shadow-xl mt-4 md:mt-0 transition-transform duration-500 hover:scale-105"
       >
@@ -128,7 +169,7 @@
           </div>
         </div>
       </div>
-
+  
       <div
         class="card bg-base-100 image-full w-full md:w-96 lg:w-[40rem] shadow-xl mt-4 md:mt-0 transition-transform duration-500 hover:scale-105"
       >
